@@ -1,0 +1,129 @@
+body, h1, h2, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+strong{
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+body{
+    font-family: 'arial';
+    background-color: #ddd;
+    color: #333;
+    font-size: 14px;
+}
+
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.title{
+    margin-bottom: 40px;    
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.price{
+    display: flex;
+    margin: 0 -20px;
+    /* 네거티브 마진 주기 */
+}
+
+.price-item{
+    background-color: white;
+    flex-basis: 33.33333333%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-item.most{
+    margin: -20px 20px;
+}
+
+.price-item-header, .price-item-footer{
+    padding: 20px;
+    text-align: center;
+}
+
+.price-item-header h2{
+    margin-bottom: 15px;
+}
+
+.price-item-contents{
+    padding: 20px;
+    background-color: #efefef;
+}
+
+.price-item-footer{
+    margin-top: auto;
+}
+
+.list{
+    line-height: 1.4;
+}
+
+.list-item{
+    margin-bottom: 8px;
+    display: flex;
+}
+
+.list-item p span{
+    display: block;
+    color: #999;
+}
+
+.list-item-icon{
+    flex-shrink: 0;
+    /* 작아지지 않게 */
+    margin-right: 0.4em;
+    /* 부모에게 폰트사이즈를 받아와 0.4배 */
+    margin-top: 2px;
+    fill: green;
+    /* svg 컬러 채우기 */
+    /* color: green;
+    fill: currentColor; */
+}
+
+.tag{
+    margin-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag span{
+    font-size: 0.5em;
+    /* 부모 30px 의 0.5배 15px */
+    margin: 0 0.2em;
+}
+
+.button{
+    background-color: dodgerblue;
+    color: white;
+    display: block;
+    padding: 20px 0;
+    transition: all .4s;
+}
+
+.button.red{
+    background-color: orangered;
+}
+
+.button:hover{
+    background-color: darkblue;
+}
